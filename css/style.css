@@ -445,6 +445,7 @@ p {
 .contacts-container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-logo {
@@ -492,7 +493,7 @@ p {
 
 /*---------------Join----------------*/
 .join {
-  margin-left: 70px;
+  
 }
 .join-text {
   font-weight: 700;
@@ -539,7 +540,6 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  margin-left: 93px;
   margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--adress-link-color);
@@ -548,14 +548,13 @@ p {
 .subscription-input {
   min-width: 358px;
   height: 50px;
-  margin-left: 93px;
   margin-right: 12px;
   padding: 16px 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--adress-link-color);
   background-color: var(--background-color-footer);
 }
 .subscription-input::placeholder {
@@ -628,7 +627,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 auto;
   width: 30px;
   height: 30px;
   right: 8px;
@@ -647,20 +645,35 @@ p {
 }
 
 .modal-text {
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
+  letter-spacing: 0.03em;
   color: var(--main-color);
-  padding-bottom: 12px;
+  margin-bottom: 12px;
+
+}
+
+.form-field-name{
+  margin: 0 auto;
+}
+
+.form-field {
+  margin-top: 10px;
 }
 
 .form-label {
   display: block;
-  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--second-color);
+  
+}
+
+.textarea-field {
+  margin-top: 10px;
 }
 
 .input-wrap {
@@ -672,18 +685,16 @@ p {
   transform: translateY(-50%);
   top: 50%;
   margin-left: 12px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-wrap:focus-within > .modal-input,
-.input-wrap:hover > .modal-input {
+.input-wrap:focus-within > .modal-input {
   border-color: var(--hover-color);
   outline: transparent;
   border: 1px solid var(--hover-color);
 }
 
-.input-wrap:focus-within > .form-icon,
-.input-wrap:hover > .form-icon {
+.input-wrap:focus-within > .form-icon {
   fill: var(--hover-color);
   border-color: var(--hover-color);
 }
@@ -697,24 +708,27 @@ p {
 
 .modal-input {
   display: block;
-  margin-bottom: 10px;
+  margin-top: 10px;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+
 }
 
 .coments-modul {
+  display: block;
   resize: none;
   width: 100%;
   height: 120px;
+  margin-top: 4px;
   padding: 16px 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 ::placeholder {
@@ -760,7 +774,7 @@ p {
 .form-conditions {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .conditions-text {
@@ -789,7 +803,7 @@ p {
   margin-top: 30px;
   border-radius: 4px;
   color: var(--adress-link-color);
-  background: var(--background-color-btn);
+  background-color: var(--background-color-btn);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   cursor: pointer;
@@ -798,7 +812,7 @@ p {
 }
 .btn-submit:hover,
 .btn-submit:focus {
-  background: var(--hover-second-color);
+  background-color: var(--hover-second-color);
 }
 
 /*----------------Portfolio---------*/
@@ -1031,6 +1045,7 @@ p {
 .contacts-container-portfolio {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .adress-item-portfolio {
@@ -1060,9 +1075,7 @@ p {
   color: var(--hover-color);
 }
 
-.join-portfolio {
-  margin-left: 70px;
-}
+
 .join-portfolio-text {
   font-weight: 700;
   display: inline-block;
@@ -1108,7 +1121,6 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  margin-left: 93px;
   margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--adress-link-color);
@@ -1117,14 +1129,13 @@ p {
 .subscription-input-portfolio {
   min-width: 358px;
   height: 50px;
-  margin-left: 93px;
   margin-right: 12px;
   padding: 16px 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--adress-link-color);
   background-color: var(--background-color-footer);
 }
 .subscription-input-portfolio::placeholder {
